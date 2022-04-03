@@ -3,18 +3,6 @@ import MovieCard from './components/MovieCard';
 import './App.css'
 
 function App() {
-  
-  const API_URL='http://www.omdbapi.com/?i=tt3896198&apikey=f54ed28e'
-  const [movienames,setMovieNames] = useState([])
-  const [searchTerm,setSearchTerm]=useState("")
-
-  const searchMovieName=async (searchTerm)=>{
-      const response=await fetch(`${API_URL}&s=${searchTerm}`)
-      const val = await response.json()
-      // console.log(val)
-      setMovieNames(val.Search)
-  };
-
   return (
     <div className="App">
       <div className="Home">

@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import "./styles/moviecard.css";
 
 function MovieCard({ movie }) {
   console.log(movie);
