@@ -2,7 +2,7 @@ import React from 'react'
 import Card from "react-bootstrap/Card";
 
 function MovieCard({movie}) {
-  // console.log(imdbID,Year,Title,Type)  
+  console.log(movie)  
   return (
     <div className="card">
         <Card style={{ width: '18rem', height:'5rem' }}>

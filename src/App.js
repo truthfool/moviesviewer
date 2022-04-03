@@ -4,7 +4,7 @@ import MovieCard from './components/MovieCard';
 function App() {
   
   const API_URL='http://www.omdbapi.com/?i=tt3896198&apikey=f54ed28e'
-  const [moviename,setMovieNames] = useState([])
+  const [movienames,setMovieNames] = useState([])
   const [searchTerm,setSearchTerm]=useState("")
 
   const searchMovieName=async (searchTerm)=>{
@@ -27,9 +27,9 @@ function App() {
           <button onClick={()=>{searchMovieName(searchTerm)}}>Search</button>
       </div>
       <div className="movies-list">
-        {moviename.map((movie)=>{
+        {movienames.map((movie)=>(
           <MovieCard movie={movie}/>
-        })}
+        ))}
       </div>
     </div>
   );
